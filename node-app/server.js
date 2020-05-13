@@ -10,10 +10,10 @@ var server = http.createServer(function (req, res) {
    req.on('data', function (data) {});
    req.on('end', function () {
       console.log("Invoked");
-      var properties = PropertiesReader('/etc/node-app/node-app.config');
+      //var properties = PropertiesReader('/etc/node-app/node-app.config');
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write('<html><head><title></title></head>');
-      res.write('<body bgcolor="' + properties.get('color') + '">');
+      res.write('<body bgcolor="' + process.env.color + '">');
       res.write('<h1>' + process.env.BACKGROUND_MSG + '</h1>');
       res.write('</body>');
       res.end('\n');
