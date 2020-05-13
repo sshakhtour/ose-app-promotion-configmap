@@ -13,8 +13,8 @@ var server = http.createServer(function (req, res) {
       //var properties = PropertiesReader('/etc/node-app/node-app.config');
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write('<html><head><title></title></head>');
-      console.log(process.env.COLOR);
-      res.write('<body bgcolor="' + process.env.COLOR + '">');
+      console.log(process.env.color);
+      res.write('<body bgcolor="' + process.env.color + '">');
       res.write('<h1>' + process.env.BACKGROUND_MSG + '</h1>');
       res.write('</body>');
       res.end('\n');
