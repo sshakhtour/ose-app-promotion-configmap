@@ -37,7 +37,7 @@
         "source": {
           "type": "Git",
           "git": {
-            "uri": "https://github.com/jorgemoralespou/ose-app-promotion-configmap.git"
+            "uri": "https://github.com/sshakhtour/ose-app-promotion-configmap.git"
           },
           "contextDir": "node-app",
           "secrets": []
