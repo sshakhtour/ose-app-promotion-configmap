@@ -94,6 +94,10 @@
                     "value": "8080"
                   },
                   {
+                    "name": "color",
+                    "value": "yellow"
+                  },
+                  {
                     "name": "BACKGROUND_MSG",
                     "valueFrom": {
                       "configMapKeyRef": {
