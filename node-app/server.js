@@ -16,6 +16,7 @@ var server = http.createServer(function (req, res) {
       console.log(process.env.color);
       res.write('<body bgcolor="' + process.env.color + '">');
       res.write('<h1>' + process.env.BACKGROUND_MSG + '</h1>');
+      res.write('<h1>' + process.env.BACKGROUND_MSG + '</h1>');
       res.write('</body>');
       res.end('\n');
    });
